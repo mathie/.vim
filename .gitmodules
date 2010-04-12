@@ -13,3 +13,6 @@
 [submodule "vendor/plugins/surround"]
 	path = vendor/plugins/surround
 	url = git://github.com/tpope/vim-surround.git
+[submodule "vendor/plugins/unimpaired"]
+	path = vendor/plugins/unimpaired
+	url = git://github.com/tpope/vim-unimpaired.git

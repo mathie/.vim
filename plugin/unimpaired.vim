@@ -1,0 +1,1 @@
+../vendor/plugins/unimpaired/plugin/unimpaired.vim
