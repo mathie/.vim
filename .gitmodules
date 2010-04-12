@@ -16,3 +16,6 @@
 [submodule "vendor/plugins/unimpaired"]
 	path = vendor/plugins/unimpaired
 	url = git://github.com/tpope/vim-unimpaired.git
+[submodule "vendor/plugins/fugitive"]
+	path = vendor/plugins/fugitive
+	url = git://github.com/tpope/vim-fugitive.git
