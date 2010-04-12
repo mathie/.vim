@@ -1,0 +1,1 @@
+../vendor/plugins/nerdtree/nerdtree_plugin/fs_menu.vim
