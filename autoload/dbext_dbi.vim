@@ -1,0 +1,1 @@
+../vendor/plugins/dbext/autoload/dbext_dbi.vim
