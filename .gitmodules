@@ -25,3 +25,6 @@
 [submodule "vendor/plugins/speeddating"]
 	path = vendor/plugins/speeddating
 	url = git://github.com/tpope/vim-speeddating.git
+[submodule "vendor/plugins/endwise"]
+	path = vendor/plugins/endwise
+	url = git://github.com/tpope/vim-endwise.git
