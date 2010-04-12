@@ -22,3 +22,6 @@
 [submodule "vendor/plugins/markdown"]
 	path = vendor/plugins/markdown
 	url = git://github.com/tpope/vim-markdown.git
+[submodule "vendor/plugins/speeddating"]
+	path = vendor/plugins/speeddating
+	url = git://github.com/tpope/vim-speeddating.git
