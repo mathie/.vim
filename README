@@ -1,5 +1,0 @@
-# My Vim stuff
-
-It would appear that I'm looking to use a bunch of plugins for Vim in order to make it usable for Rails development. I've already lost track of all the bits I've downloaded, where they're from and how I keep them up to date. So how about some git loving? The idea here is to have the necessary plugins as git submodules that I can update as necessary. But it's also to keep everything separated so I can individually update plugins as required.
-
-Current plan: download plugins and unzip them in vendor/plugins, or create git submodules in vendor/plugins, for the plugins I want. Then a Rake task to automatically symlink the bits into place. Win.
