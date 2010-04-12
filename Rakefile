@@ -4,8 +4,8 @@ require 'rake'
 task :default => :symlink
 
 task :symlink do
-  Dir['vendor/plugins/*'].each do |plugin|
-    Dir["#{plugin}/*"].select { |d| File.directory?(d) }.each do |dir|
+  plugin_directories.each do |plugin_directory|
+    plugin_subdirs(plugin_directory).each do |dir|
       top_level_dir = File.basename(dir)
       Dir.mkdir(top_level_dir) unless File.directory?(top_level_dir)
       Dir.chdir(top_level_dir) do
@@ -18,10 +18,18 @@ task :symlink do
 end
 
 task :update do
-  Dir['vendor/plugins/*'].each do |plugin|
-    Dir.chdir(plugin) do
+  plugin_directories.each do |plugin_directory|
+    Dir.chdir(plugin_directory) do
       sh 'git pull'
-    end if File.directory?("#{plugin}/.git")
+    end if File.directory?("#{plugin_directory}/.git")
   end
   Rake::Task["symlink"].invoke
+end
+
+def plugin_directories
+  Dir['vendor/plugins/*']
+end
+
+def plugin_subdirs(plugin_directory)
+  Dir["#{plugin_directory}/*"].select { |d| File.directory?(d) }
 end
