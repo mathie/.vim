@@ -1,0 +1,1 @@
+../vendor/plugins/ragtag/plugin/ragtag.vim

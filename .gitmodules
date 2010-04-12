@@ -1,3 +1,6 @@
 [submodule "vendor/plugins/rails"]
 	path = vendor/plugins/rails
 	url = git://github.com/tpope/vim-rails.git
+[submodule "vendor/plugins/ragtag"]
+	path = vendor/plugins/ragtag
+	url = git://github.com/tpope/vim-ragtag.git
