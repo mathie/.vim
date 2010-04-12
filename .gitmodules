@@ -4,3 +4,6 @@
 [submodule "vendor/plugins/ragtag"]
 	path = vendor/plugins/ragtag
 	url = git://github.com/tpope/vim-ragtag.git
+[submodule "vendor/plugins/cucumber"]
+	path = vendor/plugins/cucumber
+	url = git://github.com/tpope/vim-cucumber.git
