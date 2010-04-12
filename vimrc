@@ -29,7 +29,7 @@ set smartcase
 set hlsearch
 
 " Stick the kitchen sink in the status line
-set statusline=%F%m%r%h%w\ [TYPE=%Y\ %{&ff}]\ [%l/%L\ (%p%%)]
+set statusline=%F%m%r%h%w\ [TYPE=%Y\ %{&ff}]\ [%l/%L\ (%p%%)]\ %{fugitive#statusline()}
 
 " Tab navigation similar to Firefox/Safari
 map <D-S-]> gt
