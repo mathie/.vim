@@ -51,3 +51,11 @@ map <D-0> :tablast<CR>
 " Make the GUI in MacVim a little more pleasant
 set guifont=Consolas\ 12
 set guioptions-=T
+
+" Highlight trailing whitespace, 'cos I dislike that sort of thing.
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
