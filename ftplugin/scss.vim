@@ -1,0 +1,1 @@
+../vendor/plugins/haml/ftplugin/scss.vim
