@@ -20,7 +20,7 @@ end
 task :update do
   plugin_directories.each do |plugin_directory|
     Dir.chdir(plugin_directory) do
-      sh 'git pull'
+      sh 'git remote update; git reset --hard origin/master'
     end if File.directory?("#{plugin_directory}/.git")
   end
   Rake::Task["symlink"].invoke
