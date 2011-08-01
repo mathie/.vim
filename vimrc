@@ -61,7 +61,7 @@ map <D-0> :tablast<CR>
 :command -bar -nargs=1 OpenURL :!open <args>
 
 " Make the GUI in MacVim a little more pleasant
-set guifont=Consolas\ 12
+set guifont=Menlo\ Regular:h14
 set guioptions-=T
 
 " Highlight trailing whitespace, 'cos I dislike that sort of thing.
