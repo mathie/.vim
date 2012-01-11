@@ -34,6 +34,3 @@
 [submodule "vendor/plugins/snipmate"]
 	path = vendor/plugins/snipmate
 	url = git://github.com/msanders/snipmate.vim.git
-[submodule "vendor/plugins/nerdtree"]
-	path = vendor/plugins/nerdtree
-	url = git://github.com/scrooloose/nerdtree.git
