@@ -4,6 +4,7 @@ require 'rake'
 task :default => :symlink
 
 task :symlink do
+  sh "find . -type l | xargs rm"
   plugin_directories.each do |plugin_directory|
     plugin_subdirs(plugin_directory).each do |dir|
       top_level_dir = File.basename(dir)
