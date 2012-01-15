@@ -1,8 +1,9 @@
 require 'rubygems'
 require 'rake'
 
-task :default => :symlink
+task :default => :update
 
+desc "Symlink all the vendored plugins into where vim loads them"
 task :symlink do
   sh "find . -type l | xargs rm"
   plugin_directories.each do |plugin_directory|
@@ -18,11 +19,12 @@ task :symlink do
   end
 end
 
+desc "Update vendored plugins to latest upstream"
 task :update do
   plugin_directories.each do |plugin_directory|
     Dir.chdir(plugin_directory) do
       sh 'git remote update; git reset --hard origin/master'
-    end if File.directory?("#{plugin_directory}/.git")
+    end if File.exists?("#{plugin_directory}/.git")
   end
   Rake::Task["symlink"].invoke
 end
