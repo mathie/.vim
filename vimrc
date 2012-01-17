@@ -9,7 +9,8 @@ set cursorline
 
 " Please do syntax highlighting
 syntax on
-colorscheme vividchalk
+set background=dark
+colorscheme solarized
 
 " Indenting
 " Set an indent as two spaces, convert tabs to spaces, and indentation is

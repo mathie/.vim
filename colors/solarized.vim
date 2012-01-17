@@ -1,0 +1,1 @@
+../vendor/plugins/solarized/colors/solarized.vim
