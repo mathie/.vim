@@ -1,0 +1,1 @@
+../vendor/plugins/ruby/compiler/rspec.vim

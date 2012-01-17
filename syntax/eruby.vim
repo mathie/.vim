@@ -1,0 +1,1 @@
+../vendor/plugins/ruby/syntax/eruby.vim

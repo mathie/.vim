@@ -64,3 +64,6 @@
 [submodule "vendor/plugins/rspec"]
 	path = vendor/plugins/rspec
 	url = git://github.com/skwp/vim-rspec
+[submodule "vendor/plugins/ruby"]
+	path = vendor/plugins/ruby
+	url = git://github.com/vim-ruby/vim-ruby

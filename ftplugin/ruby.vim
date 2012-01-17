@@ -1,0 +1,1 @@
+../vendor/plugins/ruby/ftplugin/ruby.vim
