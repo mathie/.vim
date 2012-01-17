@@ -67,3 +67,6 @@
 [submodule "vendor/plugins/ruby"]
 	path = vendor/plugins/ruby
 	url = git://github.com/vim-ruby/vim-ruby
+[submodule "vendor/plugins/scss"]
+	path = vendor/plugins/scss
+	url = git://github.com/cakebaker/scss-syntax.vim
