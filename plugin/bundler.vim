@@ -1,0 +1,1 @@
+../vendor/plugins/bundler/plugin/bundler.vim

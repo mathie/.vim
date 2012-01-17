@@ -1,0 +1,1 @@
+../vendor/plugins/eunuch/plugin/eunuch.vim

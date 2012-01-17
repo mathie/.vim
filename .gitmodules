@@ -46,3 +46,9 @@
 [submodule "vendor/plugins/commentary"]
 	path = vendor/plugins/commentary
 	url = git://github.com/tpope/vim-commentary
+[submodule "vendor/plugins/eunuch"]
+	path = vendor/plugins/eunuch
+	url = git://github.com/tpope/vim-eunuch
+[submodule "vendor/plugins/bundler"]
+	path = vendor/plugins/bundler
+	url = git://github.com/tpope/vim-bundler
