@@ -43,3 +43,6 @@
 [submodule "vendor/plugins/repeat"]
 	path = vendor/plugins/repeat
 	url = git://github.com/tpope/vim-repeat
+[submodule "vendor/plugins/commentary"]
+	path = vendor/plugins/commentary
+	url = git://github.com/tpope/vim-commentary

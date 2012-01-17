@@ -1,0 +1,1 @@
+../vendor/plugins/commentary/doc/commentary.txt
