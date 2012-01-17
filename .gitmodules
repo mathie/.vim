@@ -61,3 +61,6 @@
 [submodule "vendor/plugins/puppet"]
 	path = vendor/plugins/puppet
 	url = git://github.com/ajf/puppet-vim
+[submodule "vendor/plugins/rspec"]
+	path = vendor/plugins/rspec
+	url = git://github.com/skwp/vim-rspec

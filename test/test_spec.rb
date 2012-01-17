@@ -1,0 +1,1 @@
+../vendor/plugins/rspec/test/test_spec.rb
