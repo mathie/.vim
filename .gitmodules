@@ -37,3 +37,6 @@
 [submodule "vendor/plugins/ctrlp"]
 	path = vendor/plugins/ctrlp
 	url = git://github.com/kien/ctrlp.vim
+[submodule "vendor/plugins/ack"]
+	path = vendor/plugins/ack
+	url = git://github.com/mileszs/ack.vim
