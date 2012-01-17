@@ -58,3 +58,6 @@
 [submodule "vendor/plugins/javascript"]
 	path = vendor/plugins/javascript
 	url = git://github.com/pangloss/vim-javascript
+[submodule "vendor/plugins/puppet"]
+	path = vendor/plugins/puppet
+	url = git://github.com/ajf/puppet-vim
