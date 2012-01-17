@@ -1,0 +1,1 @@
+../vendor/plugins/coffee-script/syntax/coffee.vim

@@ -1,0 +1,1 @@
+../vendor/plugins/coffee-script/test/test-reserved.coffee

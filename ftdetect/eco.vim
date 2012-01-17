@@ -1,0 +1,1 @@
+../vendor/plugins/coffee-script/ftdetect/eco.vim
