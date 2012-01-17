@@ -34,3 +34,6 @@
 [submodule "vendor/plugins/snipmate"]
 	path = vendor/plugins/snipmate
 	url = git://github.com/msanders/snipmate.vim.git
+[submodule "vendor/plugins/ctrlp"]
+	path = vendor/plugins/ctrlp
+	url = git://github.com/kien/ctrlp.vim
