@@ -40,3 +40,6 @@
 [submodule "vendor/plugins/ack"]
 	path = vendor/plugins/ack
 	url = git://github.com/mileszs/ack.vim
+[submodule "vendor/plugins/repeat"]
+	path = vendor/plugins/repeat
+	url = git://github.com/tpope/vim-repeat
