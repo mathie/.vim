@@ -10,6 +10,7 @@ set cursorline
 " Please do syntax highlighting
 syntax on
 set background=dark
+let g:solarized_termcolors=256
 colorscheme solarized
 
 " Indenting
