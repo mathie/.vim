@@ -1,0 +1,1 @@
+../vendor/plugins/tabular/autoload/tabular.vim
