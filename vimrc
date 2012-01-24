@@ -10,6 +10,14 @@ set number
 " Highlight the current line
 set cursorline
 
+set scrolloff=3
+set nowrap
+
+" Enable hidden buffer, and write files out automatically (which is what I had
+" TextMate set to, so what could possibly go wrong?).
+set hidden
+set autowriteall
+
 " Please do syntax highlighting
 syntax on
 set background=dark
@@ -32,6 +40,7 @@ set incsearch
 set ignorecase
 set smartcase
 set hlsearch
+nmap <Leader>= :set nohlsearch<CR>
 
 " Folding. Default to indent, but if there's a syntax file for the current
 " buffer, use syntax.
@@ -53,20 +62,7 @@ let g:rubycomplete_classes_in_global = 1
 
 " Stick the kitchen sink in the status line
 set statusline=%F%m%r%h%w\ [TYPE=%Y\ %{&ff}]\ [%l/%L\ (%p%%)]\ %{fugitive#statusline()}
-
-" Tab navigation similar to Firefox/Safari
-map <D-S-]> gt
-map <D-S-[> gT
-map <D-1> 1gt
-map <D-2> 2gt
-map <D-3> 3gt
-map <D-4> 4gt
-map <D-5> 5gt
-map <D-6> 6gt
-map <D-7> 7gt
-map <D-8> 8gt
-map <D-9> 9gt
-map <D-0> :tablast<CR>
+set laststatus=2
 
 " OpenURL command required by rails.vim.
 :command -bar -nargs=1 OpenURL :!open <args>
