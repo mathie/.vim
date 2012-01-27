@@ -1,9 +1,6 @@
 " This is not my grandfather's vi.
 set nocompatible
 
-" , is easier to find than \.
-let mapleader=','
-
 " A gutter on the left hand side with the current line number
 set number
 
