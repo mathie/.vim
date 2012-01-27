@@ -37,7 +37,7 @@ set incsearch
 set ignorecase
 set smartcase
 set hlsearch
-nmap <Leader>= :set nohlsearch<CR>
+nmap <C-l> :set nohlsearch<CR>
 
 " Folding. Default to indent, but if there's a syntax file for the current
 " buffer, use syntax.
