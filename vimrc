@@ -82,3 +82,10 @@ set listchars=tab:▸\ ,eol:¬
 
 " Rails.vim customisations
 autocmd User Rails Rnavcommand factory test/factories spec/factories -glob=* -suffix=_factory.rb -default=both()
+
+" Map the tabularize plugin to something a little more helpful for aligning =
+" and :.
+nmap <Leader>a= :Tabularize /=<CR>
+vmap <Leader>a= :Tabularize /=<CR>
+nmap <Leader>a: :Tabularize /:\zs<CR>
+vmap <Leader>a: :Tabularize /:\zs<CR>
