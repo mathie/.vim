@@ -1,1 +1,0 @@
-../vendor/plugins/speeddating/plugin/speeddating.vim
