@@ -7,9 +7,6 @@
 [submodule "vendor/plugins/cucumber"]
 	path = vendor/plugins/cucumber
 	url = git://github.com/tpope/vim-cucumber.git
-[submodule "vendor/plugins/vividchalk"]
-	path = vendor/plugins/vividchalk
-	url = git://github.com/tpope/vim-vividchalk.git
 [submodule "vendor/plugins/surround"]
 	path = vendor/plugins/surround
 	url = git://github.com/tpope/vim-surround.git
