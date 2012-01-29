@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'rake'
+require 'fileutils'
 
 task :default => :update
 
@@ -7,13 +8,14 @@ desc "Symlink all the vendored plugins into where vim loads them"
 task :symlink do
   sh "find . -type l | xargs rm"
   plugin_directories.each do |plugin_directory|
-    plugin_subdirs(plugin_directory).each do |dir|
-      top_level_dir = File.basename(dir)
-      Dir.mkdir(top_level_dir) unless File.directory?(top_level_dir)
-      Dir.chdir(top_level_dir) do
-        Dir["../#{dir}/*"].each do |file|
-          File.symlink(file, File.basename(file)) unless File.exists?(File.basename(file))
-        end
+    plugin_files(plugin_directory).each do |file|
+      dir = File.dirname(file.gsub(/vendor\/plugins\/[^\/]+\//, ''))
+      next if dir =~ /^etc|tmp|test/
+      FileUtils.mkdir_p(dir)
+      Dir.chdir(dir) do
+        target = File.basename(file)
+        source = "#{dir.gsub(/[^\/]+/, '..')}/#{file}"
+        File.symlink(source, target) unless File.exists?(target)
       end
     end
   end
@@ -33,6 +35,6 @@ def plugin_directories
   Dir['vendor/plugins/*']
 end
 
-def plugin_subdirs(plugin_directory)
-  Dir["#{plugin_directory}/*"].select { |d| File.directory?(d) }
+def plugin_files(plugin_directory)
+  FileList["#{plugin_directory}/*/**/*"].select { |f| File.file?(f) }
 end

@@ -1,0 +1,1 @@
+../../vendor/plugins/rspec/plugin/lib/failure_renderer.rb

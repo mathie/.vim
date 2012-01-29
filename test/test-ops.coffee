@@ -1,1 +1,0 @@
-../vendor/plugins/coffee-script/test/test-ops.coffee

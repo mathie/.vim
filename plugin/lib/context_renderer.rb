@@ -1,0 +1,1 @@
+../../vendor/plugins/rspec/plugin/lib/context_renderer.rb
