@@ -67,3 +67,6 @@
 [submodule "vendor/plugins/tabular"]
 	path = vendor/plugins/tabular
 	url = git://github.com/godlygeek/tabular.git
+[submodule "vendor/plugins/space"]
+	path = vendor/plugins/space
+	url = git://github.com/spiiph/vim-space.git

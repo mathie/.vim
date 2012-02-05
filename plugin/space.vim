@@ -1,0 +1,1 @@
+../vendor/plugins/space/plugin/space.vim
