@@ -82,6 +82,7 @@ set listchars=tab:▸\ ,eol:¬
 
 " Rails.vim customisations
 autocmd User Rails Rnavcommand factory test/factories spec/factories -glob=* -suffix=_factory.rb -default=both()
+autocmd User Rails Rnavcommand uploader app/uploaders -glob=* -suffix=_uploader.rb -default=both()
 
 " Map the tabularize plugin to something a little more helpful for aligning =
 " and :.
