@@ -104,3 +104,6 @@ map <Down>  :call DontDoIt()<CR>
 
 " %% expands to the directory of the current file
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
+
+" :w!! will write the file out as root instead. Handy when you forget to...
+cmap w!! w !sudo tee % >/dev/null
