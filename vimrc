@@ -90,3 +90,17 @@ nmap <Leader>a= :Tabularize /=<CR>
 vmap <Leader>a= :Tabularize /=<CR>
 nmap <Leader>a: :Tabularize /:\zs<CR>
 vmap <Leader>a: :Tabularize /:\zs<CR>
+
+" Switch off the arrow keys 'til I learn better.
+function DontDoIt()
+  echo 'No!'
+  exe "norm! \<Esc>"
+  return ""
+endfunction
+map <Left>  :call DontDoIt()<CR>
+map <Right> :call DontDoIt()<CR>
+map <Up>    :call DontDoIt()<CR>
+map <Down>  :call DontDoIt()<CR>
+
+" %% expands to the directory of the current file
+cnoremap %% <C-R>=expand('%:h').'/'<cr>
