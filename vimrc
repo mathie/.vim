@@ -42,8 +42,7 @@ nmap <C-l> :set nohlsearch<CR>
 " Folding. Default to indent, but if there's a syntax file for the current
 " buffer, use syntax.
 set foldmethod=indent
-set foldcolumn=4
-set foldlevel=10
+set foldlevel=99
 autocmd Syntax * set foldmethod=syntax
 
 " Don't screw up folds when inserting text that might affect them, until
