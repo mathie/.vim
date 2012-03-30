@@ -106,3 +106,6 @@ cnoremap %% <C-R>=expand('%:h').'/'<cr>
 
 " :w!! will write the file out as root instead. Handy when you forget to...
 cmap w!! w !sudo tee % >/dev/null
+
+" Select the thing you last pasted
+nnoremap <expr> gp '`[' . strpart(getregtype(), 0, 1) . '`]'
