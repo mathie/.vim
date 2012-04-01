@@ -62,6 +62,7 @@ set laststatus=2
 
 " OpenURL command required by rails.vim.
 :command -bar -nargs=1 OpenURL :!open <args>
+let g:rails_url='http://localhost:5000/'
 
 " Make the GUI in MacVim a little more pleasant
 set guifont=Menlo\ Regular:h14
