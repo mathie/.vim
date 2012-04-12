@@ -1,0 +1,1 @@
+../vendor/plugins/vimux/plugin/vimux.vim
