@@ -1,0 +1,1 @@
+../vendor/plugins/smartinput/doc/smartinput.txt

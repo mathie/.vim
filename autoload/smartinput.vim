@@ -1,0 +1,1 @@
+../vendor/plugins/smartinput/autoload/smartinput.vim
