@@ -79,3 +79,6 @@
 [submodule "vendor/plugins/argtextobj"]
 	path = vendor/plugins/argtextobj
 	url = git://github.com/vim-scripts/argtextobj.vim
+[submodule "vendor/plugins/CamelCaseMotion"]
+	path = vendor/plugins/CamelCaseMotion
+	url = git://github.com/bkad/CamelCaseMotion.git

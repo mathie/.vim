@@ -1,0 +1,1 @@
+../vendor/plugins/CamelCaseMotion/autoload/camelcasemotion.vim
