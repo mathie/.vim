@@ -1,0 +1,1 @@
+../../vendor/plugins/textobj-user/autoload/textobj/user.vim
