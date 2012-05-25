@@ -76,3 +76,6 @@
 [submodule "vendor/plugins/rake"]
 	path = vendor/plugins/rake
 	url = git://github.com/tpope/vim-rake.git
+[submodule "vendor/plugins/argtextobj"]
+	path = vendor/plugins/argtextobj
+	url = git://github.com/vim-scripts/argtextobj.vim
