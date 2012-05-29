@@ -92,15 +92,14 @@ nmap <Leader>a: :Tabularize /:\zs<CR>
 vmap <Leader>a: :Tabularize /:\zs<CR>
 
 " Switch off the arrow keys 'til I learn better.
-function DontDoIt()
-  echo 'No!'
-  exe "norm! \<Esc>"
-  return ""
-endfunction
-map <Left>  :call DontDoIt()<CR>
-map <Right> :call DontDoIt()<CR>
-map <Up>    :call DontDoIt()<CR>
-map <Down>  :call DontDoIt()<CR>
+noremap <Left>  <Nop>
+noremap <Right> <Nop>
+noremap <Up>    <Nop>
+noremap <Down>  <Nop>
+inoremap <Left>  <Nop>
+inoremap <Right> <Nop>
+inoremap <Up>    <Nop>
+inoremap <Down>  <Nop>
 
 " %% expands to the directory of the current file
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
