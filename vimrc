@@ -31,6 +31,9 @@ set shiftwidth=2
 filetype indent on
 filetype plugin indent on
 
+" Enhanced matching
+runtime macros/matchit.vim
+
 " Searching: incremental search, case insensitive unless caps are explicitly
 " searched for and highlight the search term.
 set incsearch
