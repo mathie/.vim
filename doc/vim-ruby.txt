@@ -1,0 +1,1 @@
+../vendor/plugins/ruby/doc/vim-ruby.txt
