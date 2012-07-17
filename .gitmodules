@@ -88,3 +88,6 @@
 [submodule "vendor/plugins/textobj-user"]
 	path = vendor/plugins/textobj-user
 	url = git://github.com/kana/vim-textobj-user.git
+[submodule "vendor/plugins/syntastic"]
+	path = vendor/plugins/syntastic
+	url = git://github.com/scrooloose/syntastic.git
