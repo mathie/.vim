@@ -21,6 +21,9 @@ set background=dark
 let g:solarized_termcolors=256
 colorscheme solarized
 
+" Store the swap files centrally so they don't pollute individual projects
+set directory=~/.vim/tmp
+
 " Indenting
 " Set an indent as two spaces, convert tabs to spaces, and indentation is
 " filetype-specific.
