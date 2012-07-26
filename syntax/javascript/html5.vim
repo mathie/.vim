@@ -1,0 +1,1 @@
+../../vendor/plugins/html5/syntax/javascript/html5.vim

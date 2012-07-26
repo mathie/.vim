@@ -1,0 +1,1 @@
+../../vendor/plugins/html5/syntax/html/aria.vim

@@ -1,1 +1,1 @@
-../vendor/plugins/javascript/indent/html.vim
+../vendor/plugins/html5/indent/html.vim
