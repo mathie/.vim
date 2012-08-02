@@ -91,6 +91,7 @@ autocmd User Rails Rnavcommand factory test/factories spec/factories -glob=* -su
 autocmd User Rails Rnavcommand uploader app/uploaders -glob=* -suffix=_uploader.rb -default=both()
 autocmd User Rails Rnavcommand presenter app/presenters -glob=* -suffix=_presenter.rb -default=both()
 autocmd User Rails Rnavcommand worker app/workers -glob=* -suffix=_worker.rb -default=both()
+autocmd User Rails Rnavcommand template app/assets/templates -glob=**/* -suffix=.jst.eco -default=both()
 
 " Map the tabularize plugin to something a little more helpful for aligning =
 " and :.
