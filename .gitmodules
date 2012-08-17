@@ -58,9 +58,6 @@
 [submodule "vendor/plugins/scss"]
 	path = vendor/plugins/scss
 	url = git://github.com/cakebaker/scss-syntax.vim
-[submodule "vendor/plugins/solarized"]
-	path = vendor/plugins/solarized
-	url = git://github.com/altercation/vim-colors-solarized
 [submodule "vendor/plugins/tabular"]
 	path = vendor/plugins/tabular
 	url = git://github.com/godlygeek/tabular.git
