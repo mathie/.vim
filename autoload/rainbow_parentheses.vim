@@ -1,0 +1,1 @@
+../vendor/plugins/rainbow_parentheses/autoload/rainbow_parentheses.vim
