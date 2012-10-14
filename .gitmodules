@@ -97,3 +97,6 @@
 [submodule "vendor/plugins/nerdtree"]
 	path = vendor/plugins/nerdtree
 	url = git://github.com/scrooloose/nerdtree
+[submodule "vendor/plugins/tagbar"]
+	path = vendor/plugins/tagbar
+	url = git://github.com/majutsushi/tagbar

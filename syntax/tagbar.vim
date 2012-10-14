@@ -1,0 +1,1 @@
+../vendor/plugins/tagbar/syntax/tagbar.vim
