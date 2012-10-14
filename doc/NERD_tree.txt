@@ -1,0 +1,1 @@
+../vendor/plugins/nerdtree/doc/NERD_tree.txt
