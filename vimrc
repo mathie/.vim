@@ -93,10 +93,19 @@ set listchars=tab:▸\ ,eol:¬
 
 " Rails.vim customisations
 autocmd User Rails Rnavcommand factory test/factories spec/factories -glob=* -suffix=_factory.rb -default=both()
-autocmd User Rails Rnavcommand uploader app/uploaders -glob=* -suffix=_uploader.rb -default=both()
-autocmd User Rails Rnavcommand presenter app/presenters -glob=* -suffix=_presenter.rb -default=both()
-autocmd User Rails Rnavcommand worker app/workers -glob=* -suffix=_worker.rb -default=both()
-autocmd User Rails Rnavcommand template app/assets/templates -glob=**/* -suffix=.jst.eco -default=both()
+
+" Additional app/ directories I often use.
+autocmd User Rails Rnavcommand uploader  app/uploaders  -glob=**/* -suffix=_uploader.rb  -default=both()
+autocmd User Rails Rnavcommand presenter app/presenters -glob=**/* -suffix=_presenter.rb -default=both()
+autocmd User Rails Rnavcommand worker    app/workers    -glob=**/* -suffix=_worker.rb    -default=both()
+autocmd User Rails Rnavcommand message   app/messages   -glob=**/* -suffix=_message.rb   -default=both()
+
+" Backbone JS files
+autocmd User Rails Rnavcommand template     app/assets/templates               -glob=**/* -suffix=.jst.eco        -default=both()
+autocmd User Rails Rnavcommand jsview       app/assets/javascripts/views       -glob=**/* -suffix=_view.js.coffee -default=both()
+autocmd User Rails Rnavcommand jscollection app/assets/javascripts/collections -glob=**/* -suffix=.js.coffee      -default=both()
+autocmd User Rails Rnavcommand jsmodel      app/assets/javascripts/models      -glob=**/* -suffix=.js.coffee      -default=both()
+autocmd User Rails Rnavcommand jsrouter     app/assets/javascripts/routers     -glob=**/* -suffix=.js.coffee      -default=both()
 
 " Map the tabularize plugin to something a little more helpful for aligning =
 " and :.
