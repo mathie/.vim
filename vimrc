@@ -107,12 +107,16 @@ autocmd User Rails Rnavcommand jscollection app/assets/javascripts/collections -
 autocmd User Rails Rnavcommand jsmodel      app/assets/javascripts/models      -glob=**/* -suffix=.js.coffee      -default=both()
 autocmd User Rails Rnavcommand jsrouter     app/assets/javascripts/routers     -glob=**/* -suffix=.js.coffee      -default=both()
 
-" Map the tabularize plugin to something a little more helpful for aligning =
-" and :.
-nmap <Leader>a= :Tabularize /=<CR>
-vmap <Leader>a= :Tabularize /=<CR>
-nmap <Leader>a: :Tabularize /:\zs<CR>
-vmap <Leader>a: :Tabularize /:\zs<CR>
+" Map the tabularize plugin to something a little more helpful for aligning =,
+" => and :.
+nmap <Leader>a=       :Tabularize /[<>=]\+<CR>
+vmap <Leader>a=       :Tabularize /[<>=]\+<CR>
+nmap <Leader>a:       :Tabularize /:\zs/l0l1<CR>
+vmap <Leader>a:       :Tabularize /:\zs/l0l1<CR>
+nmap <Leader>a<Space> :Tabularize / \+/l0<CR>
+vmap <Leader>a<Space> :Tabularize / \+/l0<CR>
+nmap <Leader>a,       :Tabularize /,\zs/l0l1<CR>
+vmap <Leader>a,       :Tabularize /,\zs/l0l1<CR>
 
 " Switch off the arrow keys 'til I learn better.
 noremap <Left>  <Nop>
