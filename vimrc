@@ -44,6 +44,10 @@ set smartcase
 set hlsearch
 nmap <C-l> :set nohlsearch<CR>
 
+" Spelling
+set spell
+set spelllang=en_gb
+
 " Folding. Default to indent, but if there's a syntax file for the current
 " buffer, use syntax.
 set foldmethod=indent
@@ -81,7 +85,7 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
-" Switch on rainbow parens by default.
+" Switch on rainbow parentheses by default.
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
