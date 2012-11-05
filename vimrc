@@ -45,7 +45,6 @@ set hlsearch
 nmap <C-l> :set nohlsearch<CR>
 
 " Spelling
-set spell
 set spelllang=en_gb
 
 " Folding. Default to indent, but if there's a syntax file for the current
