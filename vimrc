@@ -183,6 +183,14 @@ autocmd BufEnter * nested :call tagbar#autoopen(0)
 nnoremap <silent> <F8> :TagbarToggle<CR>
 
 autocmd vimenter * NERDTree | wincmd p
-" autocmd BufEnter * if &modifiable | NERDTreeFind | wincmd p | endif
+
+function! rc:syncTree()
+  if &modifiable && filereadable(expand('%'))
+    NERDTreeFind
+    normal! zz
+    wincmd p
+  endif
+endfunction
+autocmd BufEnter * call rc:syncTree()
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 nnoremap <silent> <F9> :NERDTreeToggle<CR>
