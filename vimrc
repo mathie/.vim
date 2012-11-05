@@ -176,6 +176,8 @@ if executable('coffeetags')
         \ }
         \ }
 endif
+let g:tagbar_compact = 1
+let g:tagbar_width = 30
 
 autocmd BufEnter * nested :call tagbar#autoopen(0)
 nnoremap <silent> <F8> :TagbarToggle<CR>
