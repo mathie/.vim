@@ -1,0 +1,1 @@
+../../vendor/plugins/syntastic/autoload/syntastic/util.vim
