@@ -179,7 +179,8 @@ let g:tagbar_compact = 1
 let g:tagbar_width = 30
 
 autocmd BufEnter * nested :call tagbar#autoopen(0)
-nnoremap <silent> <F8> :TagbarToggle<CR>
+
+let NERDTreeIgnore = [ '\~$', '^tmp$[[dir]]', '^log$[[dir]]', '^coverage$[[dir]]' ]
 
 autocmd vimenter * NERDTree | wincmd p
 
@@ -192,4 +193,3 @@ function! rc:syncTree()
 endfunction
 autocmd BufEnter * call rc:syncTree()
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-nnoremap <silent> <F9> :NERDTreeToggle<CR>
