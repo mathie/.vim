@@ -17,8 +17,7 @@ set autowriteall
 
 " Please do syntax highlighting
 syntax on
-set background=dark
-colorscheme Tomorrow-Night
+colorscheme solarized
 
 " Store the swap files centrally so they don't pollute individual projects
 set directory=~/.vim/tmp

@@ -97,3 +97,6 @@
 [submodule "vendor/plugins/tagbar"]
 	path = vendor/plugins/tagbar
 	url = git://github.com/majutsushi/tagbar
+[submodule "vendor/plugins/solarized"]
+	path = vendor/plugins/solarized
+	url = git://github.com/altercation/vim-colors-solarized.git

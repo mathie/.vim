@@ -1,1 +1,0 @@
-../vendor/plugins/tomorrow-theme/colors/Tomorrow-Night-Bright.vim
