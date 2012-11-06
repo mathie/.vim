@@ -33,7 +33,7 @@ desc "Update vendored plugins to latest upstream"
 task :update do
   plugin_directories.each do |plugin_directory|
     Dir.chdir(plugin_directory) do
-      sh 'git remote update; git reset --hard origin/master'
+      sh 'git remote update; git reset --hard origin/master; git clean -dxf'
     end if File.exists?("#{plugin_directory}/.git")
   end
   Rake::Task["symlink"].invoke
