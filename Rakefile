@@ -2,6 +2,8 @@ require 'rubygems'
 require 'rake'
 require 'fileutils'
 
+vim = '/usr/local/Library/LinkedKegs/macvim/MacVim.app/Contents/MacOS/Vim'
+
 task :default => :update
 
 desc "Symlink all the vendored plugins into where vim loads them"
@@ -14,11 +16,17 @@ task :symlink do
       FileUtils.mkdir_p(dir)
       Dir.chdir(dir) do
         target = File.basename(file)
+        next if ['tags'].include?(target)
         source = "#{dir.gsub(/[^\/]+/, '..')}/#{file}"
         File.symlink(source, target) unless File.exists?(target)
       end
     end
   end
+end
+
+desc "Update Vim's help tags"
+task :helptags do
+  sh "#{vim} -u NONE -c 'helptags doc' -c q"
 end
 
 desc "Update vendored plugins to latest upstream"
@@ -29,6 +37,7 @@ task :update do
     end if File.exists?("#{plugin_directory}/.git")
   end
   Rake::Task["symlink"].invoke
+  Rake::Task['helptags'].invoke
 end
 
 def plugin_directories
