@@ -192,3 +192,10 @@ function! rc:syncTree()
 endfunction
 autocmd BufEnter * call rc:syncTree()
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+nmap <Leader>xr <Plug>(xmpfilter-run)
+xmap <Leader>xr <Plug>(xmpfilter-run)
+imap <Leader>xr <Plug>(xmpfilter-run)
+nmap <Leader>xm <Plug>(xmpfilter-mark)
+xmap <Leader>xm <Plug>(xmpfilter-mark)
+imap <Leader>xm <Plug>(xmpfilter-mark)

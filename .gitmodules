@@ -100,3 +100,6 @@
 [submodule "vendor/plugins/solarized"]
 	path = vendor/plugins/solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
+[submodule "vendor/plugins/vim-ruby-xmpfilter"]
+	path = vendor/plugins/vim-ruby-xmpfilter
+	url = git://github.com/t9md/vim-ruby-xmpfilter.git
