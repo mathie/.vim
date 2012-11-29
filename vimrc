@@ -8,8 +8,7 @@ set number
 set cursorline
 
 set scrolloff=3
-set linebreak
-set wrap
+set nowrap
 
 " Enable hidden buffer, and write files out automatically (which is what I had
 " TextMate set to, so what could possibly go wrong?).
