@@ -200,3 +200,7 @@ imap <Leader>xr <Plug>(xmpfilter-run)
 nmap <Leader>xm <Plug>(xmpfilter-mark)
 xmap <Leader>xm <Plug>(xmpfilter-mark)
 imap <Leader>xm <Plug>(xmpfilter-mark)
+
+" Go to the next line. Can't believe it's taken me this long to use this
+" shortcut...
+imap <M-o> <Esc>o
