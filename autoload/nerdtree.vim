@@ -1,0 +1,1 @@
+../vendor/plugins/nerdtree/autoload/nerdtree.vim
