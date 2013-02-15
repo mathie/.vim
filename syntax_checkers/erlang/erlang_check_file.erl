@@ -1,0 +1,1 @@
+../../vendor/plugins/syntastic/syntax_checkers/erlang/erlang_check_file.erl

@@ -1,0 +1,1 @@
+../../vendor/plugins/syntastic/syntax_checkers/rst/rst2pseudoxml.vim
