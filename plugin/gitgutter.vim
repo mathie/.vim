@@ -1,0 +1,1 @@
+../vendor/plugins/gitgutter/plugin/gitgutter.vim

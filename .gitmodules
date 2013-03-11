@@ -112,3 +112,6 @@
 [submodule "vendor/plugins/handlebars"]
 	path = vendor/plugins/handlebars
 	url = git://github.com/nono/vim-handlebars.git
+[submodule "vendor/plugins/gitgutter"]
+	path = vendor/plugins/gitgutter
+	url = git://github.com/airblade/vim-gitgutter.git
