@@ -1,0 +1,1 @@
+../vendor/plugins/handlebars/indent/handlebars.vim

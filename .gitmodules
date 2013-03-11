@@ -109,3 +109,6 @@
 [submodule "vendor/plugins/arduino"]
 	path = vendor/plugins/arduino
 	url = git://github.com/kingbin/vim-arduino.git
+[submodule "vendor/plugins/handlebars"]
+	path = vendor/plugins/handlebars
+	url = git://github.com/nono/vim-handlebars.git

@@ -1,0 +1,1 @@
+../vendor/plugins/handlebars/ftplugin/handlebars.vim
