@@ -115,3 +115,6 @@
 [submodule "vendor/plugins/dispatch"]
 	path = vendor/plugins/dispatch
 	url = git://github.com/tpope/vim-dispatch.git
+[submodule "vendor/plugins/rbenv"]
+	path = vendor/plugins/rbenv
+	url = git://github.com/tpope/vim-rbenv.git
