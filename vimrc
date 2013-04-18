@@ -133,6 +133,44 @@ let g:rails_gem_projections = {
       \     "affinity": "model"
       \   },
       \ },
+      \ "cucumber-rails": {
+      \   "features/*.feature": {
+      \     "command":   "feature",
+      \     "affinity":  "controller",
+      \     "alternate": "features/step_definitions/%s_steps.rb"
+      \   },
+      \   "features/step_definitions/*_steps.rb": {
+      \     "command":   "steps",
+      \     "affinity":  "controller",
+      \     "alternate": "features/%s.feature"
+      \   }
+      \ },
+      \ "ember-rails": {
+      \   "app/assets/javascripts/controllers/*_controller.js.coffee": {
+      \     "command": "jscontroller"
+      \   },
+      \   "app/assets/javascripts/routes/*_route.js.coffee": {
+      \     "command": "jsroute"
+      \   },
+      \   "app/assets/javascripts/router.js.coffee": {
+      \     "command": "jsroute"
+      \   },
+      \   "app/assets/javascripts/helpers/*_helper.js.coffee": {
+      \     "command": "jshelper"
+      \   },
+      \   "app/assets/javascripts/mixins/*_mixin.js.coffee": {
+      \     "command": "jsmixin"
+      \   },
+      \   "app/assets/javascripts/views/*_view.js.coffee": {
+      \     "command": "jsview"
+      \   },
+      \   "app/assets/javascripts/models/*.js.coffee": {
+      \     "command": "jsmodel"
+      \   },
+      \   "app/assets/javascripts/templates/*.handlebars": {
+      \     "command": "jstemplate"
+      \   }
+      \ },
       \ "backbone-on-rails": {
       \   "app/assets/templates/*.jst.eco": {
       \     "command": "jstemplate"
