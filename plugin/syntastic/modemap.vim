@@ -1,0 +1,1 @@
+../../vendor/plugins/syntastic/plugin/syntastic/modemap.vim
