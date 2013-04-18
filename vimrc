@@ -97,21 +97,61 @@ au Syntax * RainbowParenthesesLoadBraces
 set list!
 set listchars=tab:▸\ ,eol:¬
 
-" Rails.vim customisations
-autocmd User Rails Rnavcommand factory test/factories spec/factories -glob=* -suffix=_factory.rb -default=both()
+let g:rails_projections = {
+      \ "app/messages/*_message.rb": {
+      \   "command":  "message",
+      \   "affinity": "model"
+      \ },
+      \ "app/presenters/*_presenter.rb": {
+      \   "command":  "presenter",
+      \   "affinity": "model"
+      \ },
+      \ "app/workers/*_worker.rb": {
+      \   "command": "worker"
+      \ }}
 
-" Additional app/ directories I often use.
-autocmd User Rails Rnavcommand uploader  app/uploaders  -glob=**/* -suffix=_uploader.rb  -default=both()
-autocmd User Rails Rnavcommand presenter app/presenters -glob=**/* -suffix=_presenter.rb -default=both()
-autocmd User Rails Rnavcommand worker    app/workers    -glob=**/* -suffix=_worker.rb    -default=both()
-autocmd User Rails Rnavcommand message   app/messages   -glob=**/* -suffix=_message.rb   -default=both()
-
-" Backbone JS files
-autocmd User Rails Rnavcommand template     app/assets/templates               -glob=**/* -suffix=.jst.eco        -default=both()
-autocmd User Rails Rnavcommand jsview       app/assets/javascripts/views       -glob=**/* -suffix=_view.js.coffee -default=both()
-autocmd User Rails Rnavcommand jscollection app/assets/javascripts/collections -glob=**/* -suffix=.js.coffee      -default=both()
-autocmd User Rails Rnavcommand jsmodel      app/assets/javascripts/models      -glob=**/* -suffix=.js.coffee      -default=both()
-autocmd User Rails Rnavcommand jsrouter     app/assets/javascripts/routers     -glob=**/* -suffix=.js.coffee      -default=both()
+let g:rails_gem_projections = {
+      \ "carrierwave": {
+      \   "app/uploaders/*_uploader.rb": {
+      \     "command": "uploader",
+      \     "affinity": "model"
+      \   }
+      \ },
+      \ "active_model_serializers": {
+      \   "app/serializers/*_serializer.rb": {
+      \     "command": "serializer",
+      \     "affinity": "model"
+      \   }
+      \ },
+      \ "factory_girl_rails": {
+      \   "spec/factories/*s.rb": {
+      \     "command": "factory",
+      \     "affinity": "model"
+      \   },
+      \   "test/factories/*s.rb": {
+      \     "command": "factory",
+      \     "affinity": "model"
+      \   },
+      \ },
+      \ "backbone-on-rails": {
+      \   "app/assets/templates/*.jst.eco": {
+      \     "command": "jstemplate"
+      \   },
+      \   "app/assets/javascripts/views/*_view.js.coffee": {
+      \     "command": "jsview"
+      \   },
+      \   "app/assets/javascripts/collections/*s.js.coffee": {
+      \     "command":  "jscollection",
+      \     "affinity": "model"
+      \   },
+      \   "app/assets/javascripts/models/*.js.coffee": {
+      \     "command":  "jsmodel",
+      \     "affinity": "model"
+      \   },
+      \   "app/assets/javascripts/routers/*.js.coffee": {
+      \     "command": "jsrouter"
+      \   }
+      \ }}
 
 " Map the tabularize plugin to something a little more helpful for aligning =,
 " => and :.
