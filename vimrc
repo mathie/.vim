@@ -41,7 +41,7 @@ set incsearch
 set ignorecase
 set smartcase
 set hlsearch
-nmap <C-l> :set nohlsearch<CR>
+nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 
 " Spelling
 set spelllang=en_gb
