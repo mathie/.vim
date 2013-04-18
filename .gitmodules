@@ -91,9 +91,6 @@
 [submodule "vendor/plugins/rainbow_parentheses"]
 	path = vendor/plugins/rainbow_parentheses
 	url = git://github.com/kien/rainbow_parentheses.vim.git
-[submodule "vendor/plugins/nerdtree"]
-	path = vendor/plugins/nerdtree
-	url = git://github.com/scrooloose/nerdtree
 [submodule "vendor/plugins/tagbar"]
 	path = vendor/plugins/tagbar
 	url = git://github.com/majutsushi/tagbar

@@ -179,20 +179,6 @@ let g:tagbar_width = 30
 
 autocmd BufEnter * nested :call tagbar#autoopen(0)
 
-let NERDTreeIgnore = [ '\~$', '^tmp$[[dir]]', '^log$[[dir]]', '^coverage$[[dir]]' ]
-
-autocmd vimenter * NERDTree | wincmd p
-
-function! rc:syncTree()
-  if &modifiable && filereadable(expand('%'))
-    NERDTreeFind
-    normal! zz
-    wincmd p
-  endif
-endfunction
-autocmd BufEnter * call rc:syncTree()
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-
 nmap <Leader>xr <Plug>(xmpfilter-run)
 xmap <Leader>xr <Plug>(xmpfilter-run)
 imap <Leader>xr <Plug>(xmpfilter-run)
