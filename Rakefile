@@ -12,7 +12,7 @@ task :symlink do
   plugin_directories.each do |plugin_directory|
     plugin_files(plugin_directory).each do |file|
       dir = File.dirname(file.gsub(/vendor\/plugins\/[^\/]+\//, ''))
-      next if ['etc', 'tmp', 'test', 'spec', 't'].include?(dir.gsub(/\/.*$/, ''))
+      next if ['_assets', 'etc', 'tmp', 'test', 'spec', 't', 'tests'].include?(dir.gsub(/\/.*$/, ''))
       FileUtils.mkdir_p(dir)
       Dir.chdir(dir) do
         target = File.basename(file)
