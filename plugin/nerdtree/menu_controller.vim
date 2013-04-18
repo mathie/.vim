@@ -1,1 +1,0 @@
-../../vendor/plugins/nerdtree/plugin/nerdtree/menu_controller.vim

@@ -1,0 +1,1 @@
+../../vendor/plugins/nerdtree/lib/nerdtree/menu_item.vim
