@@ -8,6 +8,7 @@ set relativenumber
 set cursorline
 
 set scrolloff=3
+set sidescrolloff=10
 set nowrap
 
 " Enable hidden buffer, and write files out automatically (which is what I had
