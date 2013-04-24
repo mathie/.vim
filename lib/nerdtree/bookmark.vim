@@ -1,1 +1,0 @@
-../../vendor/plugins/nerdtree/lib/nerdtree/bookmark.vim

@@ -1,1 +1,0 @@
-../../vendor/plugins/nerdtree/lib/nerdtree/key_map.vim
