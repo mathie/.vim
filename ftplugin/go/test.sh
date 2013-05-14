@@ -1,0 +1,1 @@
+../../vendor/plugins/go/ftplugin/go/test.sh

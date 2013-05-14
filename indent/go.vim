@@ -1,0 +1,1 @@
+../vendor/plugins/go/indent/go.vim
