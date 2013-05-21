@@ -268,3 +268,7 @@ imap <Leader>xm <Plug>(xmpfilter-mark)
 " Go to the next line. Can't believe it's taken me this long to use this
 " shortcut...
 imap <M-o> <Esc>o
+
+" Set the proscribed formatting (tabs!) for Go.
+autocmd FileType go setlocal noexpandtab shiftwidth=4 tabstop=4 softtabstop=4
+autocmd FileType go autocmd BufWritePre <buffer> Fmt
