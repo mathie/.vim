@@ -216,6 +216,11 @@ inoremap <Down>  <Nop>
 " %% expands to the directory of the current file
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
 
+" Shortcut keys for navigating around the command line like I'm used to
+cnoremap <C-a> <Home>
+cnoremap <Esc>b <S-Left>
+cnoremap <Esc>f <S-Right>
+
 " :w!! will write the file out as root instead. Handy when you forget to...
 cmap w!! w !sudo tee % >/dev/null
 
