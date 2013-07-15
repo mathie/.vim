@@ -115,3 +115,9 @@
 [submodule "vendor/plugins/rbenv"]
 	path = vendor/plugins/rbenv
 	url = git://github.com/tpope/vim-rbenv.git
+[submodule "vendor/plugins/dash"]
+	path = vendor/plugins/dash
+	url = git://github.com/rizzatti/dash.vim.git
+[submodule "vendor/plugins/funcoo"]
+	path = vendor/plugins/funcoo
+	url = git://github.com/rizzatti/funcoo.vim.git

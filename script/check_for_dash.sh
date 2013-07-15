@@ -1,0 +1,1 @@
+../vendor/plugins/dash/script/check_for_dash.sh

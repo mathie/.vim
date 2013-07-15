@@ -1,0 +1,1 @@
+../vendor/plugins/dash/plugin/dash.vim

@@ -1,0 +1,1 @@
+../../vendor/plugins/funcoo/autoload/funcoo/plist.vim
