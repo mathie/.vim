@@ -1,0 +1,1 @@
+../vendor/plugins/ag/plugin/ag.vim
