@@ -277,3 +277,10 @@ imap <M-o> <Esc>o
 " Set the proscribed formatting (tabs!) for Go.
 autocmd FileType go setlocal noexpandtab shiftwidth=4 tabstop=4 softtabstop=4 nolist!
 autocmd FileType go autocmd BufWritePre <buffer> Fmt
+
+" Running focused specs wtih rspec
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
+let g:rspec_command = "Dispatch rspec {spec}"

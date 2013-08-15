@@ -121,3 +121,6 @@
 [submodule "vendor/plugins/ag"]
 	path = vendor/plugins/ag
 	url = git://github.com/rking/ag.vim.git
+[submodule "vendor/plugins/rspec"]
+	path = vendor/plugins/rspec
+	url = git://github.com/thoughtbot/vim-rspec
