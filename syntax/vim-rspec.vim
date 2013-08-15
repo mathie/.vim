@@ -1,1 +1,0 @@
-../vendor/plugins/rspec/syntax/vim-rspec.vim
