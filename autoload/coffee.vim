@@ -1,0 +1,1 @@
+../vendor/plugins/coffee-script/autoload/coffee.vim

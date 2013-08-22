@@ -1,0 +1,1 @@
+../../vendor/plugins/syntastic/syntax_checkers/python/pep257.vim
