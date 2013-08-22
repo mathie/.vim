@@ -124,3 +124,6 @@
 [submodule "vendor/plugins/rspec"]
 	path = vendor/plugins/rspec
 	url = git://github.com/thoughtbot/vim-rspec
+[submodule "vendor/plugins/vimerl"]
+	path = vendor/plugins/vimerl
+	url = https://github.com/jimenezrick/vimerl

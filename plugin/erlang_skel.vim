@@ -1,0 +1,1 @@
+../vendor/plugins/vimerl/plugin/erlang_skel.vim
