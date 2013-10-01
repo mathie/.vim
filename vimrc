@@ -2,7 +2,7 @@
 set nocompatible
 
 " A gutter on the left hand side with the current line number
-set relativenumber
+set number
 
 " Highlight the current line
 set cursorline
