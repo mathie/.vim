@@ -301,3 +301,11 @@ let g:rspec_command = "Dispatch rspec {spec}"
 let erlang_skel_header = { "author": "Graeme Mathieson",
       \ "owner": "Rubaidh Ltd" }
 let erlang_folding = 1
+
+" Reformat the current paragraph I'm typing.
+imap <Leader>p <esc>m'gq$<C-o>a
+nmap <Leader>p m'gq$<C-o>
+
+" Save the current buffer
+imap <C-s> <esc>:w<CR>a
+nmap <C-s> :w<CR>
