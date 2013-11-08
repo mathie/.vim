@@ -20,6 +20,9 @@ set titleold=
 set t_ts=]2;
 set t_fs=\
 
+" Spelling
+set spell
+
 " Enable hidden buffer, and write files out automatically (which is what I had
 " TextMate set to, so what could possibly go wrong?).
 set hidden
