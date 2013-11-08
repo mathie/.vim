@@ -1,0 +1,1 @@
+../../vendor/plugins/syntastic/syntax_checkers/scss/scss_lint.vim
