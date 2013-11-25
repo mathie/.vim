@@ -1,1 +1,0 @@
-../vendor/plugins/ag/autoload/ag.vim

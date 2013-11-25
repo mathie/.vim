@@ -1,1 +1,0 @@
-../vendor/plugins/vimerl/indent/erlang_indent.erl

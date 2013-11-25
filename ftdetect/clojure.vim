@@ -1,1 +1,0 @@
-../vendor/plugins/clojure/ftdetect/clojure.vim

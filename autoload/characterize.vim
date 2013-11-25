@@ -1,1 +1,0 @@
-../vendor/plugins/characterize/autoload/characterize.vim

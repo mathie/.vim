@@ -1,1 +1,1 @@
-../vendor/plugins/haml/syntax/scss.vim
+../vendor/plugins/scss/syntax/scss.vim

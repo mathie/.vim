@@ -19,15 +19,9 @@
 [submodule "vendor/plugins/markdown"]
 	path = vendor/plugins/markdown
 	url = git://github.com/tpope/vim-markdown.git
-[submodule "vendor/plugins/haml"]
-	path = vendor/plugins/haml
-	url = git://github.com/tpope/vim-haml.git
 [submodule "vendor/plugins/ctrlp"]
 	path = vendor/plugins/ctrlp
 	url = git://github.com/kien/ctrlp.vim
-[submodule "vendor/plugins/ack"]
-	path = vendor/plugins/ack
-	url = git://github.com/mileszs/ack.vim
 [submodule "vendor/plugins/repeat"]
 	path = vendor/plugins/repeat
 	url = git://github.com/tpope/vim-repeat
@@ -97,9 +91,6 @@
 [submodule "vendor/plugins/vim-ruby-xmpfilter"]
 	path = vendor/plugins/vim-ruby-xmpfilter
 	url = git://github.com/t9md/vim-ruby-xmpfilter.git
-[submodule "vendor/plugins/characterize"]
-	path = vendor/plugins/characterize
-	url = git://github.com/tpope/vim-characterize.git
 [submodule "vendor/plugins/handlebars"]
 	path = vendor/plugins/handlebars
 	url = git://github.com/nono/vim-handlebars.git
@@ -118,12 +109,6 @@
 [submodule "vendor/plugins/funcoo"]
 	path = vendor/plugins/funcoo
 	url = git://github.com/rizzatti/funcoo.vim.git
-[submodule "vendor/plugins/ag"]
-	path = vendor/plugins/ag
-	url = git://github.com/rking/ag.vim.git
 [submodule "vendor/plugins/rspec"]
 	path = vendor/plugins/rspec
 	url = git://github.com/thoughtbot/vim-rspec
-[submodule "vendor/plugins/vimerl"]
-	path = vendor/plugins/vimerl
-	url = https://github.com/jimenezrick/vimerl

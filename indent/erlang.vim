@@ -1,1 +1,0 @@
-../vendor/plugins/vimerl/indent/erlang.vim

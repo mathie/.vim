@@ -1,1 +1,0 @@
-../vendor/plugins/vimerl/ftplugin/erlang.vim

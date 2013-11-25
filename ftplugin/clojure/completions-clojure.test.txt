@@ -1,1 +1,0 @@
-../../vendor/plugins/clojure/ftplugin/clojure/completions-clojure.test.txt

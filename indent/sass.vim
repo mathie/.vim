@@ -1,1 +1,0 @@
-../vendor/plugins/haml/indent/sass.vim

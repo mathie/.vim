@@ -1,1 +1,0 @@
-../vendor/plugins/haml/compiler/sass.vim

@@ -1,1 +1,0 @@
-../vendor/plugins/clojure/doc/clojure.txt
