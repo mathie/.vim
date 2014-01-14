@@ -1,1 +1,0 @@
-../../vendor/plugins/syntastic/syntax_checkers/dart/dart_analyzer.vim
