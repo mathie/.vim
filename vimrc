@@ -108,7 +108,7 @@ au Syntax * RainbowParenthesesLoadBraces
 
 " Show up magic characters
 set list!
-set listchars=tab:▸\ ,eol:¬
+set listchars=tab:▸\ ,eol:¬,nbsp:~
 
 let g:rails_projections = {
       \ "app/messages/*_message.rb": {
@@ -307,3 +307,17 @@ nmap <Leader>p m'gq$<C-o>
 " Save the current buffer
 imap <C-s> <esc>:w<CR>a
 nmap <C-s> :w<CR>
+
+" Automatically quit if there's an existing open session (because that's what
+" I always do).
+augroup NoSimultaneousEdits autocmd!
+  autocmd SwapExists * let v:swapchoice = 'q'
+  autocmd SwapExists * echo 'Duplicate edit session, go find the original!'
+  autocmd SwapExists * echohl None
+  autocmd SwapExists * sleep 2
+augroup END
+
+" Highlight the 81st column of wide lines. 80 columns is more of a guideline
+" than an absolute rule...
+highlight ColorColumn ctermbg=green ctermfg=white
+call matchadd('ColorColumn', '\%81v', 100)
