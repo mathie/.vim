@@ -1,1 +1,0 @@
-../vendor/plugins/ruby/bin/vim-ruby-install.rb

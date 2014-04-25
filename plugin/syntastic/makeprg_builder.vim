@@ -1,1 +1,0 @@
-../../vendor/plugins/syntastic/plugin/syntastic/makeprg_builder.vim
