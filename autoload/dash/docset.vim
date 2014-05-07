@@ -1,1 +1,0 @@
-../../vendor/plugins/dash/autoload/dash/docset.vim
