@@ -89,7 +89,7 @@ set laststatus=2
 let g:rails_url='http://localhost:5000/'
 
 " Make the GUI in MacVim a little more pleasant
-set guifont=Menlo\ Regular:h14
+set guifont=Source\ Code\ Pro\ Medium:h12
 set guioptions-=T
 
 " Highlight trailing whitespace, 'cos I dislike that sort of thing.
