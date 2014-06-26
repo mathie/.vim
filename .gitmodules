@@ -112,3 +112,6 @@
 [submodule "vendor/plugins/rspec"]
 	path = vendor/plugins/rspec
 	url = git://github.com/thoughtbot/vim-rspec
+[submodule "vendor/plugins/vim-less"]
+	path = vendor/plugins/vim-less
+	url = https://github.com/groenewege/vim-less.git

@@ -1,0 +1,1 @@
+../vendor/plugins/vim-less/ftplugin/less.vim
