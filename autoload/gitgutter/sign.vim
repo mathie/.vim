@@ -1,0 +1,1 @@
+../../vendor/plugins/gitgutter/autoload/gitgutter/sign.vim

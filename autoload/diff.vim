@@ -1,1 +1,0 @@
-../vendor/plugins/gitgutter/autoload/diff.vim

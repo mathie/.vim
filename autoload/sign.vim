@@ -1,1 +1,0 @@
-../vendor/plugins/gitgutter/autoload/sign.vim
