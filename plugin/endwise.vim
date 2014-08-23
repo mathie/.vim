@@ -1,0 +1,1 @@
+../vendor/plugins/endwise/plugin/endwise.vim

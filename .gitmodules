@@ -115,3 +115,6 @@
 [submodule "vendor/plugins/vim-less"]
 	path = vendor/plugins/vim-less
 	url = https://github.com/groenewege/vim-less.git
+[submodule "vendor/plugins/endwise"]
+	path = vendor/plugins/endwise
+	url = git://github.com/tpope/vim-endwise.git
