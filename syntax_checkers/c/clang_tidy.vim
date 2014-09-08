@@ -1,0 +1,1 @@
+../../vendor/plugins/syntastic/syntax_checkers/c/clang_tidy.vim
