@@ -1,1 +1,0 @@
-../vendor/plugins/go/plugin/godoc.vim

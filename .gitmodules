@@ -40,9 +40,6 @@
 [submodule "vendor/plugins/javascript"]
 	path = vendor/plugins/javascript
 	url = git://github.com/pangloss/vim-javascript
-[submodule "vendor/plugins/puppet"]
-	path = vendor/plugins/puppet
-	url = git://github.com/ajf/puppet-vim
 [submodule "vendor/plugins/ruby"]
 	path = vendor/plugins/ruby
 	url = git://github.com/vim-ruby/vim-ruby
@@ -85,9 +82,6 @@
 [submodule "vendor/plugins/tagbar"]
 	path = vendor/plugins/tagbar
 	url = git://github.com/majutsushi/tagbar
-[submodule "vendor/plugins/solarized"]
-	path = vendor/plugins/solarized
-	url = git://github.com/altercation/vim-colors-solarized.git
 [submodule "vendor/plugins/vim-ruby-xmpfilter"]
 	path = vendor/plugins/vim-ruby-xmpfilter
 	url = git://github.com/t9md/vim-ruby-xmpfilter.git

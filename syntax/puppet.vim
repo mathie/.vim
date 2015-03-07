@@ -1,1 +1,0 @@
-../vendor/plugins/puppet/syntax/puppet.vim

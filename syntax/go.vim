@@ -1,1 +1,0 @@
-../vendor/plugins/go/syntax/go.vim

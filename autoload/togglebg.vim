@@ -1,1 +1,0 @@
-../vendor/plugins/solarized/autoload/togglebg.vim
