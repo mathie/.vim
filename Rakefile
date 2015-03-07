@@ -2,7 +2,7 @@ require 'rubygems'
 require 'rake'
 require 'fileutils'
 
-vim = '/usr/local/Library/LinkedKegs/macvim/MacVim.app/Contents/MacOS/Vim'
+vim = '/usr/local/bin/vim'
 
 task :default => :update
 
