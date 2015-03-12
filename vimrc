@@ -32,8 +32,8 @@ set autowriteall
 syntax on
 set background=light
 
-" Store the swap files centrally so they don't pollute individual projects
-set directory=$TMPDIR:./tmp:.
+" When was the last time I tried to recover something with a swapfile?
+set noswapfile
 
 " Indenting
 " Set an indent as two spaces, convert tabs to spaces, and indentation is
