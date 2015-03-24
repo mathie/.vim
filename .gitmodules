@@ -82,12 +82,6 @@
 [submodule "vendor/plugins/tagbar"]
 	path = vendor/plugins/tagbar
 	url = git://github.com/majutsushi/tagbar
-[submodule "vendor/plugins/vim-ruby-xmpfilter"]
-	path = vendor/plugins/vim-ruby-xmpfilter
-	url = git://github.com/t9md/vim-ruby-xmpfilter.git
-[submodule "vendor/plugins/handlebars"]
-	path = vendor/plugins/handlebars
-	url = git://github.com/nono/vim-handlebars.git
 [submodule "vendor/plugins/gitgutter"]
 	path = vendor/plugins/gitgutter
 	url = git://github.com/airblade/vim-gitgutter.git

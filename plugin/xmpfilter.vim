@@ -1,1 +1,0 @@
-../vendor/plugins/vim-ruby-xmpfilter/plugin/xmpfilter.vim
