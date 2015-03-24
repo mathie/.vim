@@ -307,6 +307,8 @@ nmap <Leader>p m'gq$<C-o>
 " Save the current buffer
 imap <C-s> <esc>:w<CR>a
 nmap <C-s> :w<CR>
+imap <Leader>w <esc>:w<CR>a
+nmap <Leader>w :w<CR>
 
 " Automatically quit if there's an existing open session (because that's what
 " I always do).
