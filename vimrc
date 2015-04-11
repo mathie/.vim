@@ -80,9 +80,8 @@ let g:rubycomplete_classes_in_global = 1
 " 1.9 version.
 command! -bar -range=% NotRocket execute '<line1>,<line2>s/:\(\w\+\)\s*=>/\1:/e' . (&gdefault ? '' : 'g')
 
-" Stick the kitchen sink in the status line
-set statusline=%f%m%r%h%w\ [TYPE=%Y\ %{&ff}/%{strlen(&fenc)?&fenc:&enc}]\ [%l/%L\ (%p%%)]\ %{fugitive#statusline()}\ %{tagbar#currenttag('[%s]','')}
-set laststatus=2
+" Use powerline to manage the status line.
+set runtimepath+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim
 
 " OpenURL command required by rails.vim.
 :command -bar -nargs=1 OpenURL :!open <args>
