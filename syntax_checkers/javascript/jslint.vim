@@ -1,1 +1,0 @@
-../../vendor/plugins/syntastic/syntax_checkers/javascript/jslint.vim

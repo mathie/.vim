@@ -1,1 +1,0 @@
-../../vendor/plugins/syntastic/plugin/syntastic/autoloclist.vim

@@ -1,1 +1,0 @@
-../../vendor/plugins/syntastic/syntax_checkers/yacc/bison.vim

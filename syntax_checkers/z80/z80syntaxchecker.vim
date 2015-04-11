@@ -1,1 +1,0 @@
-../../vendor/plugins/syntastic/syntax_checkers/z80/z80syntaxchecker.vim

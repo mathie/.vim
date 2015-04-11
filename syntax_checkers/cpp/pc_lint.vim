@@ -1,1 +1,0 @@
-../../vendor/plugins/syntastic/syntax_checkers/cpp/pc_lint.vim

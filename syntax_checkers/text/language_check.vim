@@ -1,1 +1,0 @@
-../../vendor/plugins/syntastic/syntax_checkers/text/language_check.vim
