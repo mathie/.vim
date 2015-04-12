@@ -21,7 +21,9 @@ set t_ts=]2;
 set t_fs=\
 
 " Spelling
-set spell
+setlocal spell
+setlocal spelllang=en_gb
+autocmd FileType coffee setlocal nospell
 
 " Enable hidden buffer, and write files out automatically (which is what I had
 " TextMate set to, so what could possibly go wrong?).
@@ -55,9 +57,6 @@ set ignorecase
 set smartcase
 set hlsearch
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
-
-" Spelling
-set spelllang=en_gb
 
 " Folding. Default to indent, but if there's a syntax file for the current
 " buffer, use syntax.
