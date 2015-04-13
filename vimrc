@@ -157,26 +157,40 @@ let g:rails_gem_projections = {
       \     "alternate": "features/%s.feature"
       \   }
       \ },
-      \ "ember-rails": {
-      \   "app/assets/javascripts/controllers/*_controller.js.coffee": {
+      \ "angular-rails-templates": {
+      \   "app/assets/javascripts/controllers/*_controller.coffee": {
       \     "command": "jscontroller"
       \   },
-      \   "app/assets/javascripts/routes/*_route.js.coffee": {
+      \   "app/assets/javascripts/routes.coffee": {
       \     "command": "jsroute"
       \   },
-      \   "app/assets/javascripts/router.js.coffee": {
+      \   "app/assets/javascripts/services/*_service.coffee": {
+      \     "command": "jsservice"
+      \   },
+      \   "app/assets/javascripts/templates/*.html": {
+      \     "command": "jstemplate"
+      \   }
+      \ },
+      \ "ember-rails": {
+      \   "app/assets/javascripts/controllers/*_controller.coffee": {
+      \     "command": "jscontroller"
+      \   },
+      \   "app/assets/javascripts/routes/*_route.coffee": {
       \     "command": "jsroute"
       \   },
-      \   "app/assets/javascripts/helpers/*_helper.js.coffee": {
+      \   "app/assets/javascripts/router.coffee": {
+      \     "command": "jsroute"
+      \   },
+      \   "app/assets/javascripts/helpers/*_helper.coffee": {
       \     "command": "jshelper"
       \   },
-      \   "app/assets/javascripts/mixins/*_mixin.js.coffee": {
+      \   "app/assets/javascripts/mixins/*_mixin.coffee": {
       \     "command": "jsmixin"
       \   },
-      \   "app/assets/javascripts/views/*_view.js.coffee": {
+      \   "app/assets/javascripts/views/*_view.coffee": {
       \     "command": "jsview"
       \   },
-      \   "app/assets/javascripts/models/*.js.coffee": {
+      \   "app/assets/javascripts/models/*.coffee": {
       \     "command": "jsmodel"
       \   },
       \   "app/assets/javascripts/templates/*.handlebars": {
@@ -187,18 +201,18 @@ let g:rails_gem_projections = {
       \   "app/assets/templates/*.jst.eco": {
       \     "command": "jstemplate"
       \   },
-      \   "app/assets/javascripts/views/*_view.js.coffee": {
+      \   "app/assets/javascripts/views/*_view.coffee": {
       \     "command": "jsview"
       \   },
-      \   "app/assets/javascripts/collections/*s.js.coffee": {
+      \   "app/assets/javascripts/collections/*s.coffee": {
       \     "command":  "jscollection",
       \     "affinity": "model"
       \   },
-      \   "app/assets/javascripts/models/*.js.coffee": {
+      \   "app/assets/javascripts/models/*.coffee": {
       \     "command":  "jsmodel",
       \     "affinity": "model"
       \   },
-      \   "app/assets/javascripts/routers/*.js.coffee": {
+      \   "app/assets/javascripts/routers/*.coffee": {
       \     "command": "jsrouter"
       \   }
       \ }}
