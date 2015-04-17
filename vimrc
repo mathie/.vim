@@ -270,22 +270,6 @@ map <Leader>rx :CloseVimTmuxPanes<CR>
 " Interrupt any command running in the runner pane
 map <Leader>rs :InterruptVimTmuxRunner<CR>
 
-" Coffeescript ctags-style support. Mmm.
-if executable('coffeetags')
-  let g:tagbar_type_coffee = {
-        \ 'ctagsbin' : 'coffeetags',
-        \ 'ctagsargs' : '',
-        \ 'kinds' : [
-        \ 'f:functions',
-        \ 'o:object',
-        \ ],
-        \ 'sro' : ".",
-        \ 'kind2scope' : {
-        \ 'f' : 'object',
-        \ 'o' : 'object',
-        \ }
-        \ }
-endif
 let g:tagbar_compact = 1
 let g:tagbar_width = 30
 
