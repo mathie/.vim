@@ -78,6 +78,9 @@ let g:rubycomplete_rails = 1
 let g:rubycomplete_buffer_loading = 1
 let g:rubycomplete_classes_in_global = 1
 
+" Add '?' and '!' to the list of characters judged to be part of a keyword.
+autocmd FileType ruby set iskeyword=@,!,?,48-57,_,192-255
+
 " Command to flip from Ruby 1.8's hashrocket hash syntax to the tidier Ruby
 " 1.9 version.
 command! -bar -range=% NotRocket execute '<line1>,<line2>s/:\(\w\+\)\s*=>/\1:/e' . (&gdefault ? '' : 'g')
