@@ -20,6 +20,9 @@ set titleold=
 set t_ts=]2;
 set t_fs=\
 
+" Support tab pages.
+set showtabline=2 " Always show the tab line.
+
 " Spelling
 setlocal spell
 setlocal spelllang=en_gb
