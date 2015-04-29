@@ -1,0 +1,1 @@
+../vendor/plugins/rails/compiler/rails.vim
