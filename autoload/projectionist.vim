@@ -1,0 +1,1 @@
+../vendor/plugins/projectionist/autoload/projectionist.vim

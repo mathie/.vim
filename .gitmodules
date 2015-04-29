@@ -100,3 +100,6 @@
 [submodule "vendor/plugins/endwise"]
 	path = vendor/plugins/endwise
 	url = git://github.com/tpope/vim-endwise.git
+[submodule "vendor/plugins/projectionist"]
+	path = vendor/plugins/projectionist
+	url = git://github.com/tpope/vim-projectionist.git
