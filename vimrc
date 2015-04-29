@@ -7,6 +7,9 @@ set number
 " Highlight the current line
 set cursorline
 
+" Show up completions as a menu in the status bar.
+set wildmenu
+
 set scrolloff=3
 set sidescrolloff=10
 set nowrap
