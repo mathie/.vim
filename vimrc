@@ -53,6 +53,10 @@ filetype plugin indent on
 " Enhanced matching
 runtime macros/matchit.vim
 
+" Allow backspacing over indents, line breaks and before the start of insert
+" mode.
+set backspace=indent,eol,start
+
 " Searching: incremental search, case insensitive unless caps are explicitly
 " searched for and highlight the search term.
 set incsearch
