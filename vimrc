@@ -12,7 +12,9 @@ set wildmenu
 
 set scrolloff=3
 set sidescrolloff=10
-set nowrap
+set wrap
+set linebreak
+set breakindent
 
 " Set the tmux pane title to the full path of the current file being edited.
 " The idea is that this winds up in the Terminal title and allows RescueTime
