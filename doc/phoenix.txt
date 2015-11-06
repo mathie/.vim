@@ -1,0 +1,1 @@
+../vendor/plugins/phoenix/doc/phoenix.txt

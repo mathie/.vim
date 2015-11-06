@@ -106,3 +106,6 @@
 [submodule "vendor/plugins/elixir-lang"]
 	path = vendor/plugins/elixir-lang
 	url = https://github.com/elixir-lang/vim-elixir.git
+[submodule "vendor/plugins/phoenix"]
+	path = vendor/plugins/phoenix
+	url = https://github.com/avdgaag/vim-phoenix.git
