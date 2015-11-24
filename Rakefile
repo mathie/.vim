@@ -2,7 +2,7 @@ require 'rubygems'
 require 'rake'
 require 'fileutils'
 
-vim = '/usr/local/bin/vim'
+vim = `which vim`.strip
 
 task :default => :update
 
