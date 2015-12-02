@@ -109,3 +109,6 @@
 [submodule "vendor/plugins/phoenix"]
 	path = vendor/plugins/phoenix
 	url = https://github.com/avdgaag/vim-phoenix.git
+[submodule "vendor/plugins/elm"]
+	path = vendor/plugins/elm
+	url = https://github.com/lambdatoast/elm.vim.git

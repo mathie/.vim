@@ -1,0 +1,1 @@
+../vendor/plugins/elm/ftdetect/elm.vim
