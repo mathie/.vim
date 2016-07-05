@@ -1,1 +1,0 @@
-../vendor/plugins/elm/ftplugin/elm.vim

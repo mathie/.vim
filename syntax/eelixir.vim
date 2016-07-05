@@ -1,1 +1,0 @@
-../vendor/plugins/elixir-lang/syntax/eelixir.vim

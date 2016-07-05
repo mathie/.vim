@@ -1,1 +1,0 @@
-../vendor/plugins/elixir-lang/ftplugin/elixir.vim

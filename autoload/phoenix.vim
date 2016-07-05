@@ -1,1 +1,0 @@
-../vendor/plugins/phoenix/autoload/phoenix.vim

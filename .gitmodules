@@ -103,12 +103,3 @@
 [submodule "vendor/plugins/projectionist"]
 	path = vendor/plugins/projectionist
 	url = git://github.com/tpope/vim-projectionist.git
-[submodule "vendor/plugins/elixir-lang"]
-	path = vendor/plugins/elixir-lang
-	url = https://github.com/elixir-lang/vim-elixir.git
-[submodule "vendor/plugins/phoenix"]
-	path = vendor/plugins/phoenix
-	url = https://github.com/avdgaag/vim-phoenix.git
-[submodule "vendor/plugins/elm"]
-	path = vendor/plugins/elm
-	url = https://github.com/lambdatoast/elm.vim.git

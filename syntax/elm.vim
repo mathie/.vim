@@ -1,1 +1,0 @@
-../vendor/plugins/elm/syntax/elm.vim

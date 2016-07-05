@@ -1,1 +1,0 @@
-../vendor/plugins/elixir-lang/indent/elixir.vim
