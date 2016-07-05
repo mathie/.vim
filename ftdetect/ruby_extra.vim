@@ -1,0 +1,1 @@
+../vendor/plugins/ruby/ftdetect/ruby_extra.vim

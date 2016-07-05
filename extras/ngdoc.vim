@@ -1,0 +1,1 @@
+../vendor/plugins/javascript/extras/ngdoc.vim
