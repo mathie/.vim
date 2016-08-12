@@ -1,0 +1,1 @@
+../../vendor/plugins/javascript/after/ftplugin/javascript.vim
