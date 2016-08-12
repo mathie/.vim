@@ -15,18 +15,6 @@ set sidescrolloff=10
 set wrap
 set linebreak
 
-" Set the tmux pane title to the full path of the current file being edited.
-" The idea is that this winds up in the Terminal title and allows RescueTime
-" to pick up on the current document I'm working on.
-set title
-set titlestring=%{expand(\"%:p\")}
-set titleold=
-set t_ts=]2;
-set t_fs=\
-
-" Support tab pages.
-set showtabline=2 " Always show the tab line.
-
 " Spelling
 setlocal spell
 setlocal spelllang=en_gb
@@ -72,7 +60,6 @@ nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 " Folding. Default to indent, but if there's a syntax file for the current
 " buffer, use syntax.
 set foldmethod=indent
-set foldlevel=99
 autocmd Syntax * set foldmethod=syntax
 
 " Don't screw up folds when inserting text that might affect them, until
@@ -85,10 +72,6 @@ autocmd InsertLeave,WinLeave * if exists('w:last_fdm') | let &l:foldmethod=w:las
 let g:rubycomplete_rails = 1
 let g:rubycomplete_buffer_loading = 1
 let g:rubycomplete_classes_in_global = 1
-
-" Command to flip from Ruby 1.8's hashrocket hash syntax to the tidier Ruby
-" 1.9 version.
-command! -bar -range=% NotRocket execute '<line1>,<line2>s/:\(\w\+\)\s*=>/\1:/e' . (&gdefault ? '' : 'g')
 
 " Stick the kitchen sink in the status line
 set statusline=%f%m%r%h%w\ [TYPE=%Y\ %{&ff}/%{strlen(&fenc)?&fenc:&enc}]\ [%l/%L\ (%p%%)]\ %{fugitive#statusline()}\ %{tagbar#currenttag('[%s]','')}
@@ -120,114 +103,6 @@ au Syntax * RainbowParenthesesLoadBraces
 set list!
 set listchars=tab:▸\ ,eol:¬,nbsp:~
 
-let g:rails_projections = {
-      \ "app/messages/*_message.rb": {
-      \   "command":  "message",
-      \   "affinity": "model"
-      \ },
-      \ "app/presenters/*_presenter.rb": {
-      \   "command":  "presenter",
-      \   "affinity": "model"
-      \ },
-      \ "app/workers/*_worker.rb": {
-      \   "command": "worker"
-      \ }}
-
-let g:rails_gem_projections = {
-      \ "carrierwave": {
-      \   "app/uploaders/*_uploader.rb": {
-      \     "command": "uploader",
-      \     "affinity": "model"
-      \   }
-      \ },
-      \ "active_model_serializers": {
-      \   "app/serializers/*_serializer.rb": {
-      \     "command": "serializer",
-      \     "affinity": "model"
-      \   }
-      \ },
-      \ "factory_girl_rails": {
-      \   "spec/factories/*s.rb": {
-      \     "command": "factory",
-      \     "affinity": "model"
-      \   },
-      \   "test/factories/*s.rb": {
-      \     "command": "factory",
-      \     "affinity": "model"
-      \   },
-      \ },
-      \ "cucumber-rails": {
-      \   "features/*.feature": {
-      \     "command":   "feature",
-      \     "affinity":  "controller",
-      \     "alternate": "features/step_definitions/%s_steps.rb"
-      \   },
-      \   "features/step_definitions/*_steps.rb": {
-      \     "command":   "steps",
-      \     "affinity":  "controller",
-      \     "alternate": "features/%s.feature"
-      \   }
-      \ },
-      \ "angular-rails-templates": {
-      \   "app/assets/javascripts/controllers/*_controller.coffee": {
-      \     "command": "jscontroller"
-      \   },
-      \   "app/assets/javascripts/routes.coffee": {
-      \     "command": "jsroute"
-      \   },
-      \   "app/assets/javascripts/services/*_service.coffee": {
-      \     "command": "jsservice"
-      \   },
-      \   "app/assets/javascripts/templates/*.html": {
-      \     "command": "jstemplate"
-      \   }
-      \ },
-      \ "ember-rails": {
-      \   "app/assets/javascripts/controllers/*_controller.coffee": {
-      \     "command": "jscontroller"
-      \   },
-      \   "app/assets/javascripts/routes/*_route.coffee": {
-      \     "command": "jsroute"
-      \   },
-      \   "app/assets/javascripts/router.coffee": {
-      \     "command": "jsroute"
-      \   },
-      \   "app/assets/javascripts/helpers/*_helper.coffee": {
-      \     "command": "jshelper"
-      \   },
-      \   "app/assets/javascripts/mixins/*_mixin.coffee": {
-      \     "command": "jsmixin"
-      \   },
-      \   "app/assets/javascripts/views/*_view.coffee": {
-      \     "command": "jsview"
-      \   },
-      \   "app/assets/javascripts/models/*.coffee": {
-      \     "command": "jsmodel"
-      \   },
-      \   "app/assets/javascripts/templates/*.handlebars": {
-      \     "command": "jstemplate"
-      \   }
-      \ },
-      \ "backbone-on-rails": {
-      \   "app/assets/templates/*.jst.eco": {
-      \     "command": "jstemplate"
-      \   },
-      \   "app/assets/javascripts/views/*_view.coffee": {
-      \     "command": "jsview"
-      \   },
-      \   "app/assets/javascripts/collections/*s.coffee": {
-      \     "command":  "jscollection",
-      \     "affinity": "model"
-      \   },
-      \   "app/assets/javascripts/models/*.coffee": {
-      \     "command":  "jsmodel",
-      \     "affinity": "model"
-      \   },
-      \   "app/assets/javascripts/routers/*.coffee": {
-      \     "command": "jsrouter"
-      \   }
-      \ }}
-
 " Map the tabularize plugin to something a little more helpful for aligning =,
 " => and :.
 nmap <Leader>a=       :Tabularize /[<>=]\+<CR>
@@ -238,16 +113,6 @@ nmap <Leader>a<Space> :Tabularize / \+/l0<CR>
 vmap <Leader>a<Space> :Tabularize / \+/l0<CR>
 nmap <Leader>a,       :Tabularize /,\zs/l0l1<CR>
 vmap <Leader>a,       :Tabularize /,\zs/l0l1<CR>
-
-" Switch off the arrow keys 'til I learn better.
-noremap <Left>  <Nop>
-noremap <Right> <Nop>
-noremap <Up>    <Nop>
-noremap <Down>  <Nop>
-inoremap <Left>  <Nop>
-inoremap <Right> <Nop>
-inoremap <Up>    <Nop>
-inoremap <Down>  <Nop>
 
 " %% expands to the directory of the current file
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
@@ -263,50 +128,12 @@ cmap w!! w !sudo tee % >/dev/null
 " Select the thing you last pasted
 nnoremap <expr> gp '`[' . strpart(getregtype(), 0, 1) . '`]'
 
-" Prompt for a command to run
-map <Leader>rp :PromptVimTmuxCommand<CR>
-
-" Run last command executed by RunVimTmuxCommand
-map <Leader>rl :RunLastVimTmuxCommand<CR>
-
-" Inspect runner pane
-map <Leader>ri :InspectVimTmuxRunner<CR>
-
-" Close all other tmux panes in current window
-map <Leader>rx :CloseVimTmuxPanes<CR>
-
-" Interrupt any command running in the runner pane
-map <Leader>rs :InterruptVimTmuxRunner<CR>
-
 let g:tagbar_compact = 1
 let g:tagbar_width = 30
-
-nmap <Leader>xr <Plug>(xmpfilter-run)
-xmap <Leader>xr <Plug>(xmpfilter-run)
-imap <Leader>xr <Plug>(xmpfilter-run)
-nmap <Leader>xm <Plug>(xmpfilter-mark)
-xmap <Leader>xm <Plug>(xmpfilter-mark)
-imap <Leader>xm <Plug>(xmpfilter-mark)
 
 " Go to the next line. Can't believe it's taken me this long to use this
 " shortcut...
 imap <M-o> <Esc>o
-
-" Set the proscribed formatting (tabs!) for Go.
-autocmd FileType go setlocal noexpandtab shiftwidth=4 tabstop=4 softtabstop=4 nolist!
-autocmd FileType go autocmd BufWritePre <buffer> Fmt
-
-" Running focused specs wtih rspec
-map <Leader>t :call RunCurrentSpecFile()<CR>
-map <Leader>s :call RunNearestSpec()<CR>
-map <Leader>l :call RunLastSpec()<CR>
-map <Leader>a :call RunAllSpecs()<CR>
-let g:rspec_command = "Dispatch rspec {spec}"
-
-" Erlang configuration
-let erlang_skel_header = { "author": "Graeme Mathieson",
-      \ "owner": "Rubaidh Ltd" }
-let erlang_folding = 1
 
 " Reformat the current paragraph I'm typing.
 imap <Leader>p <esc>m'gq$<C-o>a
