@@ -1,1 +1,0 @@
-../vendor/plugins/dispatch/plugin/dispatch.vim

@@ -49,9 +49,6 @@
 [submodule "vendor/plugins/tabular"]
 	path = vendor/plugins/tabular
 	url = git://github.com/godlygeek/tabular.git
-[submodule "vendor/plugins/vimux"]
-	path = vendor/plugins/vimux
-	url = git://github.com/benmills/vimux.git
 [submodule "vendor/plugins/rake"]
 	path = vendor/plugins/rake
 	url = git://github.com/tpope/vim-rake.git
@@ -79,9 +76,6 @@
 [submodule "vendor/plugins/gitgutter"]
 	path = vendor/plugins/gitgutter
 	url = git://github.com/airblade/vim-gitgutter.git
-[submodule "vendor/plugins/dispatch"]
-	path = vendor/plugins/dispatch
-	url = git://github.com/tpope/vim-dispatch.git
 [submodule "vendor/plugins/rbenv"]
 	path = vendor/plugins/rbenv
 	url = git://github.com/tpope/vim-rbenv.git

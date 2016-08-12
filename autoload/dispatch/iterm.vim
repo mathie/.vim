@@ -1,1 +1,0 @@
-../../vendor/plugins/dispatch/autoload/dispatch/iterm.vim
